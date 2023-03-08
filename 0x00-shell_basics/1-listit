@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "Applications    Documents   Dropbox Movies Pictures\nDesktop Downloads   Library Music Public"
+echo -e "Applications    Documents   Dropbox Movies Pictures\nDesktop Downloads   Library Music Public\n"
