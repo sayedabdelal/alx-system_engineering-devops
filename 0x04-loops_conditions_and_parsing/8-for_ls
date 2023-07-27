@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # Display The content of the current directory
 
-find . -maxdepth 1 -type f -printf "%f\n"
+list=$(ls)
+for i in $list; do
+  echo "$i" | cut -d '-' -f2
+done
