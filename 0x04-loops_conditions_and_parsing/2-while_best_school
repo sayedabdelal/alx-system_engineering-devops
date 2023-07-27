@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This is a simple Bash script prints "Best School"
+
+word="Best School"
+count=1
+
+while [ $count -le 10 ]
+do
+    echo "$word"
+    ((count++))
+done

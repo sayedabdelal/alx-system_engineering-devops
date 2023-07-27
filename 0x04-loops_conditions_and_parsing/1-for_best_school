@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This is a simple Bash script prints "Best School"
+
+word="Best School"
+
+for (( counter=1; counter <= 10; counter++ ))
+do
+    echo "$word"
+done
