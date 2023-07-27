@@ -5,12 +5,12 @@ hour=0
 
 while [ $hour -le 12 ]
 do
-    min=1
-    echo "hour: $hour"
-    while [ $min -le 59 ]
-    do
-        echo $min
-        (( min++ ))
-    done
-    (( hour++ ))
+  echo "Hour: $hour"
+  minute=1
+  while [ $minute -le 59 ]
+  do
+    echo "$minute"
+    (( minute++ ))
+  done
+  (( hour++ ))
 done
