@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Which might not have a TTY
+#Display in a user-oriented format
+#Show process hierarch
+
+ps -auxf
