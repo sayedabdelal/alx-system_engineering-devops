@@ -6,8 +6,8 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    """A function that returns the number of subscribers
-    to an account if existed."""
+    """Function returns the number of subscribers
+    to an account if found."""
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     response = requests.get(
         url,

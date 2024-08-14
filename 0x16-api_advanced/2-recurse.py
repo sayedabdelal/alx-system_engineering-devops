@@ -9,16 +9,14 @@ import requests
 def recurse(subreddit, hot_list=[], after=None):
     """A recursive function that queries the Reddit
     API and returns a list containing the titles of all
-    hot articles for a given subreddit. If no results
-    are found for the given subreddit, the function should
-    return None."""
+    hot articles for a given subreddit. If no results are"""
     if not subreddit or not isinstance(subreddit, str):
         return None
-    params = {"after": after} if after else {}
+    prms = {"after": after} if after else {}
     response = requests.get(
         "https://www.reddit.com/r/{}/hot.json".format(subreddit),
         headers={"User-Agent": "costum"},
-        params=params,
+        params=prms,
     )
 
     if response.status_code == 200:

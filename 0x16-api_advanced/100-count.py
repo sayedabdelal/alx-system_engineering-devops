@@ -8,7 +8,7 @@ import requests
 def count_words(subreddit, word_list, after='', word_dict={}):
     """ A function that queries the Reddit API parses the title of
     all hot articles, and prints a sorted count of given keywords
-    If no posts match or the subreddit is invalid, it prints nothing.
+    prints nothing.
     """
 
     if not word_dict:
@@ -17,8 +17,8 @@ def count_words(subreddit, word_list, after='', word_dict={}):
                 word_dict[word.lower()] = 0
 
     if after is None:
-        wordict = sorted(word_dict.items(), key=lambda x: (-x[1], x[0]))
-        for word in wordict:
+        words = sorted(word_dict.items(), key=lambda x: (-x[1], x[0]))
+        for word in words:
             if word[1]:
                 print('{}: {}'.format(word[0], word[1]))
         return None
